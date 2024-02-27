@@ -1,0 +1,168 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      /* Add this CSS to your "style.css" file */
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #ff96ff, #cc65fe, #6c63ff);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  padding: 15px;
+}
+
+.nav-button {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.white-btn {
+  background-color: #fff;
+  color: #333;
+}
+
+.form-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+}
+
+.input-box {
+  position: relative;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  outline: none;
+}
+
+.input-box i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  color: #fff;
+}
+
+.submit {
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Glass morphism effect */
+.glassmorph {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+}
+
+/* Additional styling for the card */
+.login-container {
+  max-width: 400px;
+  margin: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+    </style>
+    <title>Log in</title>
+  </head>
+  
+  <body>
+    <div class="wrapper">
+      <nav class="nav">
+        
+        
+        <div class="nav-button">
+         
+
+          
+        </div>
+       
+      </nav>
+      
+      <!----------------------------- Form box ----------------------------------->
+
+      <div class="form-box">
+
+      <!------------------- login form -------------------------->
+        <div class="login-container" id="login">
+          <div class="top">
+           
+            <header>
+              <mdiv class= "hello-container">
+                  <h2 class="hello">LOG IN</h2>
+                </mdiv>
+          </header>
+          </div>
+          <form action="/v1/user/login" method="post">
+            <div class="input-box">
+              <input
+                type="text"
+                class="input-field"
+                placeholder="Username or Email" name="email"/>
+              <i class="bx bx-user"></i>
+            </div>
+            <div class="input-box">
+              <input
+                type="password"
+                class="input-field"
+                placeholder="Password"
+                name="password"
+              />
+              <i class="bx bx-lock-alt"></i>
+            </div>
+            <div class="input-box">
+              <input type="submit" class="submit" value="log In" />
+            </div>
+          </form>
+          
+        </div>
+      </div>
+    </div>
+    
+  </body>
+</html>
